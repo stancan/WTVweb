@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calendar">
+            <div class="header">
+                <div class="mesic" id="mes">a</div>
+                <div class="cudliky">
+                    <div class="btnprev" onclick="prevmonth()"><</div>
+                    <div class="btnnext" onclick="nextmonth()">></div>
+                </div>
+            </div>
+            <div class="dny">
+                <div class="den">Pondělí</div>
+                <div class="den">Úterý</div>
+                <div class="den">Středa</div>
+                <div class="den">Čtvrtek</div>
+                <div class="den">Pátek</div>
+                <div class="den">Sobota</div>
+                <div class="den">Neděle</div>
+            </div>
+            <div class="jdny" id="adny">
+
+            </div>
+        </div>
+        <div class="planner">
+            <div class="aktivity">
+                <label for="sport" class="label">Výběr sportu</label>
+                <select class="select" name="sporty" onchange="selectS()" id="sport">
+                    <option value=""></option>
+                    <option value="volejbal">volejbal</option>
+                    <option value="basketbal">basketbal</option>
+                    <option value="házená">házená</option>
+                    <option value="florbal">florbal</option>
+                    <option value="fotbal">fotbal</option>
+                    <option value="horolezení">horolezení</option>
+                    <option value="judo">judo</option>
+                    <option value="zdravotní TV">zdravotní TV</option>
+                    <option value="sebeobrana pro ženy">sebeobrana pro ženy</option>
+                    <option value="cvičení TRX">cvičení TRX</option>
+                    <option value="kruhový trénink ">kruhový trénink </option>
+                    <option value="kondiční posilování">kondiční posilování</option>
+                    <option value="výuka horolezení">výuka horolezení</option>
+                    <option value="Squash">Squash</option>
+                    <option value="badminton">badminton</option>
+                    <option value="Plavání">Plavání</option>
+                    <option value="moderní pohybové hry">moderní pohybové hry</option>
+                    <option value="tenis">tenis</option>
+                    <option value="frisbee">frisbee</option>
+                    <option value="softbal">softbal</option>
+                    <option value="KO - PO">KO - PO</option>
+                    <option value="lyže -běh">lyže -běh</option>
+                    <option value="lyže sjezd"> lyže sjezd</option>
+                    <option value="orientační běh">orientační běh</option>
+                    <option value="redukční cvičení">redukční cvičení</option>
+                </select>
+                <br>
+                <label for="tel" class="label">Výběr telocvičny</label>
+                <select class="select" name="telocvicny" id="tel">
+                    <option value=""></option>
+                    <option value="Sportovní hala ZČU" disabled = "true">Sportovní hala ZČU</option>
+                    <option value="Malá tělocvična ZČU" disabled = "true">Malá tělocvična ZČU</option>
+                    <option value="Zrcadlový sál ZČU" disabled = "true">Zrcadlový sál ZČU</option>
+                    <option value="Posilovna ZČU" disabled = "true">Posilovna ZČU</option>
+                    <option value="Horolezecká stěna" disabled = "true">Horolezecká stěna</option>
+                    <option value="Squash  SPORTPALACE" disabled = "true">Squash SPORTPALACE</option>
+                    <option value="Area D" disabled = "true">Area D</option>
+                    <option value="Plavecký bazén" disabled = "true">Plavecký bazén</option>
+                    <option value="Slavie VŠ" disabled = "true">Slavie VŠ</option>
+                    <option value="Tělocvična - koleje Lochotín " disabled = "true">Tělocvična - koleje Lochotín </option>
+                    <option value="Tělocvična FPE" disabled = "true">Tělocvična FPE </option>
+                </select>
+                <br>
+                <label for="spol" class="label">Hledám spolusportujícího</label>
+                <select class="select" name="spolusportujici" id="spol">
+                    <option value="ne">Ne</option>
+                    <option value="ano">Ano</option>
+                </select>
+                <br>
+                <label for="skup" class="label">Jsme skupina</label>
+                <br>
+                <select class="select" name="skupina" id="skup">
+                    <option value="ne">Ne</option>
+                    <option value="ano">Ano</option>
+                </select>
+            </div>
+        </div>
+        <div class="casy" >
+            <div class="casyA" id = "cas"></div>
+       </div>
+    </div>
+</body>
+
+</html>

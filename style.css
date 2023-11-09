@@ -1,0 +1,183 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.calendar {
+    width: 40%;
+    max-width: 600px;
+    background: lightgray;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+}
+
+.casy {
+    width: 780px;
+    min-height: 215px;
+    background: lightblue;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 805px;
+    position: absolute;
+}
+select option[disabled] {
+    display: none;
+}
+.planner {
+    width: 20%;
+    min-height: 470px;
+    max-width: 200px;
+    background: lightslategray;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+}
+
+.calendar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+
+.calendar .header .cudliky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btnnext {
+    margin: 20px;
+
+}
+
+.btnprev {
+    margin: 20px;
+}
+
+.btnprev:hover {
+    transform: scale(1.1);
+}
+
+.btnnext:hover {
+    transform: scale(1.1);
+}
+
+.calendar .dny {
+    display: flex;
+    gap: 15px;
+
+}
+
+.calendar .dny .den {
+    width: calc(100%/ 7 - 14px);
+    text-align: center;
+}
+
+.calendar .jdny {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.casy .casyA {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.calendar .jdny .cdny {
+    width: calc(100%/ 7 - 20px);
+    height: 40px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: green;
+}
+
+.casy .casyA .cascss {
+    width: calc(100%/ 7 - 10px);
+    height: 30px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: green;
+}
+.casy .casyA .vybcas {
+    width: calc(100%/ 7 - 10px);
+    height: 30px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: blue;
+    transform: scale(1.1);
+
+}
+.casy .casyA .pcas {
+    width: calc(100%/ 7 - 10px);
+    height: 30px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: grey;
+}
+.calendar .jdny .cadny {
+    width: calc(100%/ 7 - 20px);
+    height: 40px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: red;
+}
+
+.calendar .jdny .pdny {
+    width: calc(100%/ 7 - 20px);
+    height: 40px;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: gray;
+}
+
+.calendar .jdny .cdny:hover {
+    background-color: lightgreen;
+    transform: scale(1.1);
+}
+.casy .casyA .cascss:hover {
+    background-color: lightgreen;
+    transform: scale(1.1);    
+}
