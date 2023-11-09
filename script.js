@@ -1,5 +1,4 @@
 
-
 const month = ["Leden", "Únor", "Březen", "Duben", "Květen", "Červen", "Červenec", "Srpen", "Září", "Říjen", "Listopad", "Prosinec"];
 const d = new Date();
 let rok = d.getFullYear();
